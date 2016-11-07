@@ -1,12 +1,14 @@
 # SSH mit dem Pi
 Von der Platine zum SHH gesteuerten Roboter
-Einführug 
+[Einführug](https://github.com/OleMausS/SSH-mit-dem-Pi/#1)
+[Den Pi in den Betrieb setzen](https://github.com/OleMausS/SSH-mit-dem-Pi/#2)
+[Der erste Start](https://github.com/OleMausS/SSH-mit-dem-Pi/#3))
 
-# 1. Start - Was ist der Pi?
+#1. Start - Was ist der Pi?
 Der Raspberry Pi ist ein Mini-Computer, der vieles von dem, was ein normaler Computer auch kann: Er hat eine graphische Oberfläche1, einen Internetbrowser und andere Programme. 
 Es gibt aktuell drei Versionen des Pi, die Funktionen sind größtenteils gleich. Das neueste Modell hat auch WLAN und Bluetooth an Board.
 
-# 2.Den Pi in Betrieb setzen
+#2.Den Pi in Betrieb setzen
 
 Der Pi besitzt keine Festplatte oder anderweitige interne Speicher (außer den Arbeitsspeicher4 natürlich), weshalb wir einen „basteln“ müssen: Das geht ganz einfach mit einer SD-Karte die über mindestens 8GB5 verfügt und komplett leer ist, denn sie wird im weiteren Verlauf formatiert6.
 
@@ -25,7 +27,7 @@ Statt path_of_your_image.img geben wir den Pfad der IMG Datei ein. Diesen könne
 Schlägt der Befehl fehl, kann man statt rdisk auch nur disk verwenden.
 Ist der Befehl ausgeführt, kann die SD-Karte ausgeworfen werden und wir stecken sie in den Pi. 
 
-# 3. Der erste Start
+#3. Der erste Start
 Nun nehmen wir ein Display zur Hand, das wir entweder direkt 
 
 
