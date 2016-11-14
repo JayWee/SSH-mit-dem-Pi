@@ -43,10 +43,10 @@ Je nach Betriebsystem ist das Verbinden zum Pi unterschiedlich. Dise Anleitung g
 
 OSX basiert auf Linux und da Linux einen SSH-Klienten mitbringt, gelten diese Schritte auch für OSX.
 
-Wir öffnen das Terminla und führen folgenen Befehlen aus: 
+Wir öffnen das Terminal und führen folgenen Befehlen aus: 
 
-ssh pi@<ip>
-<ip> ist die Adresse unter der wir den Pi erreichen. Sie findet wir zuhause über den Router und in der Schule mittels  
+ssh pi@ip
+ip ist die Adresse unter der wir den Pi erreichen. Sie findet wir zuhause über den Router und in der Schule mittels  
 Wir sind nun auf dem Raspberry Pi eingewehlt und können Befehle und Programme direkt auf dem Pi ausführen. 
 Falls wir die Verbindung beenden wollen senden wir entweder den Befehl exit oder schließen das Terminal 
 
