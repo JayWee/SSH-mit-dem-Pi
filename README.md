@@ -28,27 +28,40 @@ Schlägt der Befehl fehl, kann man statt rdisk auch nur disk verwenden.
 Ist der Befehl ausgeführt, kann die SD-Karte ausgeworfen werden und wir stecken sie in den Pi. 
 
 #3. Der erste Start
-Nun nehmen wir ein Display zur Hand, das wir entweder direkt direkt über HDMI oder Composite anschließen. Dann stecken wir die SD-Karte, auf der das Raspbian installiert ist, ein und versorgen den Pi über ein Micro-USB-Kabel mit Strom. 
+Nun  stecken wir die SD-Karte, auf der das Raspbian installiert ist, ein und versorgen den Pi über ein Micro-USB-Kabel mit Strom. 
 Nun behinnt der Pi den Startvorgang. In der Zeit können wir ein LAN-Kabel zur Versorgung mit Internet anschließen. (die Pis der Schule müssen nur angeschlossen werden, sie haben schon Internet. Eigene Pi's müssen erst registriert werden: Wendet euch einfach an Herrn Buhl oder die NV.
 
-# Zugriff auf den Pi 
+## Zugriff auf den Pi 
 Der Pi ist nach etwa 2 Minuten bereit um mit ihm zu arbeiten und auf ihn zuzugreifen. Das machen wir mittels SSH: SSH ist ein ___
 Das Herstellen einer SSH-Verbindung zum Rasperry Pi ist sehr nützlich zum Ausführen von Befehlen. Man kann sich dann das anschließen von Monitor und Tastatur an den Pi sparen und vom eigenem Laptop oder Schulrecher aus den Pi steuern.
 
-Je nach Betriebsystem ist das Verbinden zum Pi unterschiedlich. Dise Anleitung gilt für Linux, OSX und Windows.
+Je nach Betriebsystem ist das Verbinden zum Pi unterschiedlich. Dise Anleitung gilt für Linu und macOS.
 
 ## Verbindung aufbauen
 
-### Linux, OSX
+### Linux, macOS
 
-OSX basiert auf Linux und da Linux einen SSH-Klienten mitbringt, gelten diese Schritte auch für OSX.  
+macOS basiert auf Linux und da Linux einen SSH-Klienten mitbringt, gelten diese Schritte auch für OSX.  
 
 Wir öffnen das Terminal und führen folgenen Befehlen aus:   
 
 ssh pi@ip  
-ip ist die Adresse unter der wir den Pi erreichen. Sie findet wir zuhause über den Router und in der Schule mittels  
+ip ist die Adresse unter der wir den Pi erreichen. Sie finden wir zuhause über den Router und in der Schule mittels  
 Wir sind nun auf dem Raspberry Pi eingewehlt und können Befehle und Programme direkt auf dem Pi ausführen. 
-Falls wir die Verbindung beenden wollen senden wir entweder den Befehl exit oder schließen das Terminal 
+Falls wir die Verbindung beenden wollen senden wir entweder den Befehl exit oder schließen das Terminal.
+
+# Programmieren auf dem Pi 
+Es ist uns nun möglich Programme direkt auf dem Pi zu schreiben in dem wir die Programmiersprache Python benutzen. 
+Man kann aber auch auf dem Mac, auf dem wir auch das Terminal ausführen, Programme schreiben.
+Ich empfehle, zum Schreiben von Programmen Xcode zu benutzen, dieses Programm ist kostenfrei im [Mac-AppStore](https://itunes.apple.com/de/app/xcode/id497799835?mt=12) verfügbar. Auch TextWrangler eignet sich, ist aber ein wenig komplizierter. Im folgenen wird sich auf Xcode bezogen. 
+![alt text](bild)  
+
+
+
+
+
+
+
 
 
 
