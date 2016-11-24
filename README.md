@@ -53,9 +53,13 @@ Falls wir die Verbindung beenden wollen senden wir entweder den Befehl exit oder
 # Programmieren auf dem Pi 
 Es ist uns nun möglich Programme direkt auf dem Pi zu schreiben in dem wir die Programmiersprache Python benutzen. 
 Man kann aber auch auf dem Mac, auf dem wir auch das Terminal ausführen, Programme schreiben.
-Ich empfehle, zum Schreiben von Programmen Xcode zu benutzen, dieses Programm ist kostenfrei im [Mac-AppStore](https://itunes.apple.com/de/app/xcode/id497799835?mt=12) verfügbar. Auch TextWrangler eignet sich, ist aber ein wenig komplizierter. Im folgenen wird sich auf Xcode bezogen. 
+(Ich empfehle, zum Schreiben von Programmen Xcode zu benutzen, dieses Programm ist kostenfrei im [Mac-AppStore](https://itunes.apple.com/de/app/xcode/id497799835?mt=12) verfügbar. Auch TextWrangler eignet sich, ist aber ein wenig komplizierter. Im folgenen wird sich auf Xcode bezogen. )
 ![alt text](bild)  
+  
+### Anlegen eines Dokuments auf dem Pi  
+Wir öffnen das Terminal und führen abermals den Befehl ssh pi@ip durch. Nun loggen wir uns mit dem Passwort ein und geben den Befehl nano Test.py ein. Jetzt öffnet sich der Python-Editor, mit dem man die Programme schreiben kann. Jetzt können wir hier den Code eigegben.
 
+# Das erste Programm 
 
 
 
