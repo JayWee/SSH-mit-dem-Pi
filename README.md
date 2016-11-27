@@ -175,6 +175,7 @@ while (count < 3):
         GPIO.output (22,GPIO.HIGH)  
         time.sleep(1)  
         counter +=1  
+       
  
 
 
