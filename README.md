@@ -156,8 +156,7 @@ greenfaus = GPIO.output(23,GPIO.LOW)
 count = 0  
 while (count < 3):  
     GPIO.output (22,GPIO.HIGH)  
-    GPIO.output(27,GPIO.HIGH)  
-    time.sleep(2)  
+    GPIO.output(27,GPIO.HIGH)    
     if GPIO.input(2) == GPIO.HIGH:  
         print "Signal kommt"  
         GPIO.output(27,GPIO.LOW)  
@@ -175,7 +174,9 @@ while (count < 3):
         GPIO.output (22,GPIO.HIGH)  
         time.sleep(1)  
         counter +=1  
-       
+GPIO.cleanup()
+
+
  
 
 
