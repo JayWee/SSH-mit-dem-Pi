@@ -76,7 +76,7 @@ time.sleep(5) #wartet fuenf sekunden
 GPIO.output(18,GPIO.LOW) #schaltet die LED wieder aus 
 GPIO.cleanup() #setzt die Steuerung zurueck
 
-Mit crtl-x verlassen wir den Editor: Erst crtl-x dann y und dann Enter drücken. Nun geben wir den Befehl sudo phyton Test.py ein um das Programm auszuführen.
+Mit crtl-x verlassen wir den Editor: Erst _crtl-x_ dann _y_ und dann _Enter_ drücken. Nun geben wir den Befehl sudo phyton Test.py ein um das Programm auszuführen.
 
 Jetzt habe ich eine Abfolge von LED leuchten erstellt: 
 GPIO.setup(17,GPIO.OUT) #rot  
@@ -123,7 +123,8 @@ time.sleep(0.5)
 GPIO.output(18,GPIO.LOW)  
 time.sleep(0.5)  
 
-Um daraus eine Schleife zu machen setzt kann eine Counter einsetzen. Am Anfang des Programmes count = 0 
+Um daraus eine Schleife zu machen setzt kann man einen Counter einsetzen. Am Anfang des Programmes _count = 0_ setzen und dann _while (count < 1):_ das sieht dann so aus:
+
 
 
 
