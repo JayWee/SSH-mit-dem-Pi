@@ -68,7 +68,7 @@ import time
 Nun definieren wir die Pins als Ausgang-Pins und den GPIO Modus:
 GPIO.setmode(GPIO.BCM)  
 GPIO.setwarnings(False)  
-GPIO.setup(87,GPIO.OUT) #LED  
+GPIO.setup(18,GPIO.OUT) #LED  
 
 Um die LED zu aktivieren setzen wir den output auf HIGH:
 GPIO.output(18,GPIO.HIGH)
@@ -128,6 +128,54 @@ count = 0
 while (count < x):  
 darunter dann den Inhalt der Schleife setzen. Diese ist jetzt unendlich. Wenn man ans Ende ein _counter += 1_ setzt wird der Counter nach jeden Durchlauf um 1 erhöht und das Programm endet nach x Durchläufen. 
 
+GPIO.setup(2,GPIO.IN) definiert Pin 2 als eingang. Das gegegebn kann man mit der Funktion _if GPIO.input(2) == GPIO.HIGH_ und einem Schlater eine Ampel bauen das habe ich getan. Mit _print "text"_ habe ich die einzelnen Schritte in der Konsole ausgegeben. 
+import RPi.GPIO as GPIO
+import time
+
+GPIO.setmode(GPIO.BCM)  
+GPIO.setwarnings(False)  
+  
+GPIO.setup(17,GPIO.OUT) #rot  
+GPIO.setup(18,GPIO.OUT) #gelb  
+GPIO.setup(27,GPIO.OUT) #gruen  
+GPIO.setup(22,GPIO.OUT) #rotf  
+GPIO.setup(23,GPIO.OUT) #gruenf  
+  
+  
+#rotan = GPIO.output(17,GPIO.HIGH)  
+#rotaus = GPIO.output(17,GPIO.LOW)  
+#gelban = GPIO.output(18,GPIO.HIGH)  
+#gelbaus = GPIO.output(18,GPIO.LOW)  
+#greenan = GPIO.output(27,GPIO.HIGH)  
+#greenaus = GPIO.output(27,GPIO.LOW)  
+#rotfan = GPIO.output (22,GPIO.HIGH)  
+#rotfaus = GPIO.output (22,GPIO.LOW)  
+#greenfan = GPIO.output(23,GPIO.HIGH)  
+#greenfaus = GPIO.output(23,GPIO.LOW)  
+  
+count = 0  
+while (count < 3):  
+    GPIO.output (22,GPIO.HIGH)  
+    GPIO.output(27,GPIO.HIGH)  
+    time.sleep(2)  
+    if GPIO.input(2) == GPIO.HIGH:  
+        print "Signal kommt"  
+        GPIO.output(27,GPIO.LOW)  
+        GPIO.output(18,GPIO.HIGH)  
+        time.sleep(2)  
+        GPIO.output(18,GPIO.LOW)  
+        GPIO.output(17,GPIO.HIGH)  
+        time.sleep(1)  
+        GPIO.output (22,GPIO.LOW)  
+        GPIO.output (23,GPIO.HIGH)  
+        print "Bite gehen"  
+        time.sleep(5)  
+        print "Bitte nicht mehr gehen"  
+        GPIO.output (23,GPIO.LOW)  
+        GPIO.output (22,GPIO.HIGH)  
+        time.sleep(1)  
+        counter +=1  
+ 
 
 
 
