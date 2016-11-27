@@ -123,8 +123,10 @@ time.sleep(0.5)
 GPIO.output(18,GPIO.LOW)  
 time.sleep(0.5)  
 
-Um daraus eine Schleife zu machen setzt kann man einen Counter einsetzen. Am Anfang des Programmes _count = 0_ setzen und dann _while (count < 1):_ das sieht dann so aus:
-
+Um daraus eine Schleife zu machen setzt kann man einen Counter einsetzen. Am Anfang des Programmes _count = 0_ setzen und dann _while (count < 1):_ das sieht dann so aus:  
+count = 0  
+while (count < 1):  
+  GPIO.......  
 
 
 
