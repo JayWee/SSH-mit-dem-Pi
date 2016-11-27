@@ -142,16 +142,16 @@ GPIO.setup(22,GPIO.OUT) #rotf
 GPIO.setup(23,GPIO.OUT) #gruenf  
   
   
-#rotan = GPIO.output(17,GPIO.HIGH)  
-#rotaus = GPIO.output(17,GPIO.LOW)  
-#gelban = GPIO.output(18,GPIO.HIGH)  
-#gelbaus = GPIO.output(18,GPIO.LOW)  
-#greenan = GPIO.output(27,GPIO.HIGH)  
-#greenaus = GPIO.output(27,GPIO.LOW)  
-#rotfan = GPIO.output (22,GPIO.HIGH)  
-#rotfaus = GPIO.output (22,GPIO.LOW)  
-#greenfan = GPIO.output(23,GPIO.HIGH)  
-#greenfaus = GPIO.output(23,GPIO.LOW)  
+rotan = GPIO.output(17,GPIO.HIGH)  
+rotaus = GPIO.output(17,GPIO.LOW)  
+gelban = GPIO.output(18,GPIO.HIGH)  
+gelbaus = GPIO.output(18,GPIO.LOW)  
+greenan = GPIO.output(27,GPIO.HIGH)  
+greenaus = GPIO.output(27,GPIO.LOW)  
+rotfan = GPIO.output (22,GPIO.HIGH)  
+rotfaus = GPIO.output (22,GPIO.LOW)  
+greenfan = GPIO.output(23,GPIO.HIGH)  
+greenfaus = GPIO.output(23,GPIO.LOW)  
   
 count = 0  
 while (count < 3):  
